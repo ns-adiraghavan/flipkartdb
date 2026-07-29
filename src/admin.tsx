@@ -129,6 +129,9 @@ export function Login({ onLogin }: { onLogin: (email: string, pw: string) => boo
           Demo access — admin: <b>flipkart@netscribes.com</b> / <b>Flipkart@2026</b><br />
           client: <b>client@netscribes.com</b> / <b>NextGen@2026</b>
         </div>
+        <div className="login-powered">
+          <img src={`${import.meta.env.BASE_URL}netscribes-color.png`} alt="Netscribes" />
+        </div>
       </form>
     </div>
   );
