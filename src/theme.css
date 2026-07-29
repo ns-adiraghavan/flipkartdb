@@ -87,6 +87,9 @@ body { background: var(--page); color: var(--text-primary); }
   margin-top: 8px; background: rgba(255,255,255,0.08); color: #dbe2ec; border: 0;
   padding: 6px 10px; border-radius: 6px; font-size: 12px; cursor: pointer;
 }
+.sidebar .footer .powered { margin-top: 14px; display: flex; flex-direction: column; gap: 5px; }
+.sidebar .footer .powered span { font-size: 10px; color: #7a8aa3; text-transform: uppercase; letter-spacing: 0.6px; }
+.sidebar .footer .powered img { width: 108px; height: auto; opacity: 0.92; }
 
 .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .topbar {
@@ -168,6 +171,8 @@ body { background: var(--page); color: var(--text-primary); }
 .login button:hover { background: #1e63d8; }
 .login .err { color: var(--critical); font-size: 12.5px; margin-top: 12px; min-height: 16px; }
 .login .hint { margin-top: 18px; font-size: 11.5px; color: var(--text-muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 12px; }
+.login-powered { margin-top: 18px; display: flex; justify-content: center; }
+.login-powered img { width: 130px; height: auto; opacity: 0.9; }
 
 /* ── Admin panel ───────────────────────────────────────────────────────────*/
 .admin-bar { background: #fff7ec; border: 1px solid #f6d9a8; border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
