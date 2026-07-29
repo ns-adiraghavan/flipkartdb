@@ -1,0 +1,303 @@
+{
+  "kpis": {
+    "total_calls": 6754,
+    "connected": 2908,
+    "connect_rate": 43.1,
+    "agents": 7,
+    "agreed_onboarding": 65,
+    "d2c_qualified": 285,
+    "interested": 666,
+    "callbacks": 1727
+  },
+  "by_bd": [
+    {
+      "name": "Abhijeet Roy",
+      "calls": 1629,
+      "connected": 695
+    },
+    {
+      "name": "Joydeep Basak",
+      "calls": 1501,
+      "connected": 653
+    },
+    {
+      "name": "Roshan Kumar Gupta",
+      "calls": 1443,
+      "connected": 687
+    },
+    {
+      "name": "Subhajit Das",
+      "calls": 1142,
+      "connected": 471
+    },
+    {
+      "name": "Sourav Kumar De",
+      "calls": 891,
+      "connected": 340
+    },
+    {
+      "name": "Jaspreet",
+      "calls": 75,
+      "connected": 26
+    },
+    {
+      "name": "Divyani",
+      "calls": 73,
+      "connected": 36
+    }
+  ],
+  "connectivity": [
+    {
+      "name": "Not Connected",
+      "value": 3846
+    },
+    {
+      "name": "Connected",
+      "value": 2908
+    }
+  ],
+  "disposition": [
+    {
+      "name": "RNR (Ring No Response)",
+      "value": 3093
+    },
+    {
+      "name": "Call Back Requested",
+      "value": 1547
+    },
+    {
+      "name": "Not Reachable / Switched Off / Out of Network",
+      "value": 637
+    },
+    {
+      "name": "Call Picked & Disconnected",
+      "value": 627
+    },
+    {
+      "name": "Not Interested",
+      "value": 450
+    },
+    {
+      "name": "Interested but Callback Later",
+      "value": 180
+    },
+    {
+      "name": "Interested Onboarding in Nextgen LITE",
+      "value": 18
+    },
+    {
+      "name": "Payment Completed - Nextgen LITE",
+      "value": 13
+    },
+    {
+      "name": "D2C Not Eligible",
+      "value": 13
+    },
+    {
+      "name": "Business Closed",
+      "value": 6
+    },
+    {
+      "name": "Not Align with FK-NextGen Pricing",
+      "value": 6
+    },
+    {
+      "name": "Brand Number is Incorrect",
+      "value": 6
+    }
+  ],
+  "interest": [
+    {
+      "name": "Cold",
+      "value": 5273
+    },
+    {
+      "name": "Warm",
+      "value": 631
+    },
+    {
+      "name": "Hot",
+      "value": 35
+    }
+  ],
+  "d2c": [
+    {
+      "name": "Under Review",
+      "value": 6027
+    },
+    {
+      "name": "Qualified",
+      "value": 285
+    },
+    {
+      "name": "Disqualified",
+      "value": 115
+    },
+    {
+      "name": "Rnr",
+      "value": 1
+    }
+  ],
+  "funnel_stage": [
+    {
+      "name": "Attempted",
+      "value": 6700
+    },
+    {
+      "name": "Connected",
+      "value": 26
+    },
+    {
+      "name": "Closed",
+      "value": 8
+    },
+    {
+      "name": "Interested",
+      "value": 7
+    },
+    {
+      "name": "Follow-Up",
+      "value": 4
+    },
+    {
+      "name": "Paid",
+      "value": 4
+    },
+    {
+      "name": "Payment Pending",
+      "value": 1
+    }
+  ],
+  "mode": [
+    {
+      "name": "Calling Tool",
+      "value": 5917
+    },
+    {
+      "name": "Phone",
+      "value": 511
+    },
+    {
+      "name": "Convox",
+      "value": 161
+    },
+    {
+      "name": "Whatsapp",
+      "value": 2
+    }
+  ],
+  "lead_type": [
+    {
+      "name": "Client Lead Set",
+      "value": 3444
+    },
+    {
+      "name": "Ns Internal Leads",
+      "value": 2877
+    },
+    {
+      "name": "Client Inbound Leads",
+      "value": 429
+    }
+  ],
+  "agreed_fk": [
+    {
+      "name": "Pending",
+      "value": 6259
+    },
+    {
+      "name": "No",
+      "value": 422
+    },
+    {
+      "name": "Yes",
+      "value": 65
+    }
+  ],
+  "by_day": [
+    {
+      "date": "2026-07-01",
+      "calls": 326
+    },
+    {
+      "date": "2026-07-02",
+      "calls": 220
+    },
+    {
+      "date": "2026-07-03",
+      "calls": 410
+    },
+    {
+      "date": "2026-07-04",
+      "calls": 257
+    },
+    {
+      "date": "2026-07-06",
+      "calls": 192
+    },
+    {
+      "date": "2026-07-07",
+      "calls": 247
+    },
+    {
+      "date": "2026-07-08",
+      "calls": 249
+    },
+    {
+      "date": "2026-07-09",
+      "calls": 206
+    },
+    {
+      "date": "2026-07-10",
+      "calls": 199
+    },
+    {
+      "date": "2026-07-11",
+      "calls": 287
+    },
+    {
+      "date": "2026-07-13",
+      "calls": 404
+    },
+    {
+      "date": "2026-07-14",
+      "calls": 417
+    },
+    {
+      "date": "2026-07-15",
+      "calls": 358
+    },
+    {
+      "date": "2026-07-16",
+      "calls": 401
+    },
+    {
+      "date": "2026-07-17",
+      "calls": 396
+    },
+    {
+      "date": "2026-07-18",
+      "calls": 412
+    },
+    {
+      "date": "2026-07-21",
+      "calls": 254
+    },
+    {
+      "date": "2026-07-22",
+      "calls": 392
+    },
+    {
+      "date": "2026-07-23",
+      "calls": 414
+    },
+    {
+      "date": "2026-07-24",
+      "calls": 301
+    },
+    {
+      "date": "2026-07-25",
+      "calls": 412
+    }
+  ]
+}
