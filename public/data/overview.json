@@ -1,0 +1,170 @@
+{
+  "kpis": {
+    "total_leads": 81018,
+    "total_calls": 6754,
+    "connect_rate": 43.1,
+    "sellers_paid": 13,
+    "revenue_incl_gst": 184080,
+    "avg_qa_score": 56.4,
+    "kam_calls": 41,
+    "agents": 7
+  },
+  "funnel": [
+    {
+      "stage": "Leads Sourced",
+      "value": 81018
+    },
+    {
+      "stage": "Calls Made",
+      "value": 6754
+    },
+    {
+      "stage": "Connected",
+      "value": 2908
+    },
+    {
+      "stage": "Interested",
+      "value": 666
+    },
+    {
+      "stage": "Agreed Onboarding",
+      "value": 65
+    },
+    {
+      "stage": "Paid / Onboarded",
+      "value": 13
+    }
+  ],
+  "calls_by_day": [
+    {
+      "date": "2026-07-01",
+      "calls": 326
+    },
+    {
+      "date": "2026-07-02",
+      "calls": 220
+    },
+    {
+      "date": "2026-07-03",
+      "calls": 410
+    },
+    {
+      "date": "2026-07-04",
+      "calls": 257
+    },
+    {
+      "date": "2026-07-06",
+      "calls": 192
+    },
+    {
+      "date": "2026-07-07",
+      "calls": 247
+    },
+    {
+      "date": "2026-07-08",
+      "calls": 249
+    },
+    {
+      "date": "2026-07-09",
+      "calls": 206
+    },
+    {
+      "date": "2026-07-10",
+      "calls": 199
+    },
+    {
+      "date": "2026-07-11",
+      "calls": 287
+    },
+    {
+      "date": "2026-07-13",
+      "calls": 404
+    },
+    {
+      "date": "2026-07-14",
+      "calls": 417
+    },
+    {
+      "date": "2026-07-15",
+      "calls": 358
+    },
+    {
+      "date": "2026-07-16",
+      "calls": 401
+    },
+    {
+      "date": "2026-07-17",
+      "calls": 396
+    },
+    {
+      "date": "2026-07-18",
+      "calls": 412
+    },
+    {
+      "date": "2026-07-21",
+      "calls": 254
+    },
+    {
+      "date": "2026-07-22",
+      "calls": 392
+    },
+    {
+      "date": "2026-07-23",
+      "calls": 414
+    },
+    {
+      "date": "2026-07-24",
+      "calls": 301
+    },
+    {
+      "date": "2026-07-25",
+      "calls": 412
+    }
+  ],
+  "revenue_by_re": [
+    {
+      "name": "Joydeep Basak",
+      "value": 56640,
+      "sellers": 4
+    },
+    {
+      "name": "Roshan Kumar Gupta",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Subhajit Das",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Sourav Kumar De",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Subrajeet Das",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Abhijeet Roy",
+      "value": 14160,
+      "sellers": 1
+    }
+  ],
+  "leads_by_group": [
+    {
+      "name": "NS Internal",
+      "value": 78817
+    },
+    {
+      "name": "Client Lead Set",
+      "value": 2000
+    },
+    {
+      "name": "Client Inbound",
+      "value": 201
+    }
+  ]
+}
