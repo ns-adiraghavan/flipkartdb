@@ -1,0 +1,106 @@
+{
+  "kpis": {
+    "total_calls": 41,
+    "connected": 39,
+    "connect_rate": 95.1,
+    "kams": 2,
+    "followups_required": 26,
+    "at_risk": 2
+  },
+  "by_kam": [
+    {
+      "name": "Joydeep Basak",
+      "value": 29
+    },
+    {
+      "name": "Roshan Kumar Gupta",
+      "value": 12
+    }
+  ],
+  "health": [
+    {
+      "name": "Watchlist",
+      "value": 28
+    },
+    {
+      "name": "Healthy",
+      "value": 11
+    },
+    {
+      "name": "At Risk",
+      "value": 2
+    }
+  ],
+  "call_type": [
+    {
+      "name": "Growth Consultation",
+      "value": 22
+    },
+    {
+      "name": "Welcome Call",
+      "value": 11
+    },
+    {
+      "name": "Escalation Follow-Up",
+      "value": 3
+    },
+    {
+      "name": "Issue Resolution",
+      "value": 3
+    },
+    {
+      "name": "Weekly Governance",
+      "value": 1
+    }
+  ],
+  "connectivity": [
+    {
+      "name": "Connected",
+      "value": 39
+    },
+    {
+      "name": "Not Connected",
+      "value": 2
+    }
+  ],
+  "mode": [
+    {
+      "name": "Phone",
+      "value": 33
+    },
+    {
+      "name": "Udial Crm",
+      "value": 8
+    }
+  ],
+  "by_day": [
+    {
+      "date": "2026-01-15",
+      "calls": 6
+    },
+    {
+      "date": "2026-07-16",
+      "calls": 7
+    },
+    {
+      "date": "2026-07-17",
+      "calls": 7
+    },
+    {
+      "date": "2026-07-18",
+      "calls": 3
+    },
+    {
+      "date": "2026-07-20",
+      "calls": 7
+    },
+    {
+      "date": "2026-07-22",
+      "calls": 6
+    },
+    {
+      "date": "2026-07-23",
+      "calls": 5
+    }
+  ]
+}
