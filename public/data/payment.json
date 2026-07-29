@@ -1,0 +1,123 @@
+{
+  "kpis": {
+    "sellers_paid": 13,
+    "revenue_incl_gst": 184080,
+    "revenue_excl_gst": 156000,
+    "gst_collected": 28080,
+    "avg_ticket": 14160
+  },
+  "revenue_by_re": [
+    {
+      "name": "Joydeep Basak",
+      "value": 56640,
+      "sellers": 4
+    },
+    {
+      "name": "Roshan Kumar Gupta",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Subhajit Das",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Sourav Kumar De",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Subrajeet Das",
+      "value": 28320,
+      "sellers": 2
+    },
+    {
+      "name": "Abhijeet Roy",
+      "value": 14160,
+      "sellers": 1
+    }
+  ],
+  "sellers_by_re": [
+    {
+      "name": "Joydeep Basak",
+      "value": 4
+    },
+    {
+      "name": "Roshan Kumar Gupta",
+      "value": 2
+    },
+    {
+      "name": "Subhajit Das",
+      "value": 2
+    },
+    {
+      "name": "Sourav Kumar De",
+      "value": 2
+    },
+    {
+      "name": "Subrajeet Das",
+      "value": 2
+    },
+    {
+      "name": "Abhijeet Roy",
+      "value": 1
+    }
+  ],
+  "by_month": [
+    {
+      "name": "Jul'26",
+      "value": 13
+    }
+  ],
+  "by_program": [
+    {
+      "name": "Next Gen Lite",
+      "value": 13
+    }
+  ],
+  "by_paytype": [
+    {
+      "name": "Quarterly",
+      "value": 13
+    }
+  ],
+  "revenue_by_day": [
+    {
+      "date": "2026-07-06",
+      "revenue": 28320
+    },
+    {
+      "date": "2026-07-08",
+      "revenue": 14160
+    },
+    {
+      "date": "2026-07-13",
+      "revenue": 28320
+    },
+    {
+      "date": "2026-07-14",
+      "revenue": 28320
+    },
+    {
+      "date": "2026-07-15",
+      "revenue": 14160
+    },
+    {
+      "date": "2026-07-16",
+      "revenue": 14160
+    },
+    {
+      "date": "2026-07-17",
+      "revenue": 14160
+    },
+    {
+      "date": "2026-07-22",
+      "revenue": 14160
+    },
+    {
+      "date": "2026-07-24",
+      "revenue": 28320
+    }
+  ]
+}
