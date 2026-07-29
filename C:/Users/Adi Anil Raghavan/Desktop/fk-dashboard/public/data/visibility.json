@@ -1,0 +1,18 @@
+{
+  "tabs": {
+    "overview": true,
+    "leads": true,
+    "bd": true,
+    "kam": true,
+    "quality": true,
+    "payment": true
+  },
+  "kpiStrips": {
+    "overview": true,
+    "leads": true,
+    "bd": true,
+    "kam": true,
+    "quality": true,
+    "payment": true
+  }
+}
