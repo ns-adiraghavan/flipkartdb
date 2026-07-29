@@ -1,0 +1,187 @@
+/* ── FK NextGen dashboard theme ─ validated dataviz palette ────────────────── */
+:root {
+  color-scheme: light;
+  /* surfaces / ink */
+  --page: #f4f5f7;
+  --surface-1: #ffffff;
+  --surface-2: #fafafa;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e7e8ea;
+  --baseline: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.10);
+
+  /* ── Flipkart brand tokens ─────────────────────────────────────────────── */
+  --fk-blue: #2874f0;          /* Flipkart primary blue */
+  --fk-blue-600: #1e63d8;      /* hover / pressed */
+  --fk-blue-050: #eaf1fe;      /* tint */
+  --fk-yellow: #ffe11b;        /* Flipkart accent yellow (plus mark) */
+  --fk-navy: #14264d;          /* deep brand navy (sidebar) */
+  --fk-navy-700: #0f1c3b;      /* darker navy */
+  --brand: var(--fk-blue);
+  --brand-dark: var(--fk-navy);
+  --brand-ink: var(--fk-navy-700);
+  --accent-yellow: var(--fk-yellow);
+
+  /* categorical series (validated, light) — slot 1 = Flipkart blue */
+  --s1: #2874f0;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --s4: #eda100;
+  --s5: #e87ba4;
+  --s6: #008300;
+  --s7: #4a3aa7;
+  --s8: #e34948;
+
+  /* status */
+  --good: #0ca30c;
+  --warning: #fab219;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body { background: var(--page); color: var(--text-primary); }
+
+/* ── App shell ─────────────────────────────────────────────────────────────*/
+.app { display: flex; min-height: 100vh; }
+.sidebar {
+  width: 248px; flex-shrink: 0;
+  background: linear-gradient(180deg, var(--fk-navy) 0%, var(--fk-navy-700) 100%);
+  color: #e8ecf3; display: flex; flex-direction: column; padding: 20px 14px;
+  position: sticky; top: 0; height: 100vh;
+}
+.sidebar .brand { padding: 6px 8px 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.sidebar .brand .logo {
+  display: inline-flex; align-items: center; gap: 9px; font-weight: 700; font-size: 15px;
+  color: #fff; letter-spacing: 0.2px;
+}
+/* Flipkart-style mark: yellow rounded square with a blue plus */
+.fk-mark {
+  width: 20px; height: 20px; border-radius: 5px; background: var(--fk-yellow);
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  color: var(--fk-blue); font-weight: 900; font-size: 15px; line-height: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+.fk-mark::before { content: "+"; margin-top: -1px; }
+.sidebar .brand .logo .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent-yellow); }
+.sidebar .brand .sub { font-size: 11px; color: #97a3b6; margin-top: 4px; line-height: 1.4; }
+.nav { display: flex; flex-direction: column; gap: 2px; margin-top: 14px; flex: 1; }
+.nav button {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  background: transparent; border: 0; color: #b9c2d0; padding: 10px 12px; border-radius: 8px;
+  font-size: 13.5px; cursor: pointer; font-weight: 500;
+}
+.nav button:hover { background: rgba(255,255,255,0.06); color: #fff; }
+.nav button.active { background: var(--brand); color: #fff; box-shadow: inset 3px 0 0 var(--fk-yellow); }
+.nav button .ico { width: 18px; text-align: center; opacity: 0.9; }
+.sidebar .footer { font-size: 11px; color: #8492a6; padding: 10px 8px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+.sidebar .footer .who { color: #cdd6e4; font-weight: 600; }
+.sidebar .footer button {
+  margin-top: 8px; background: rgba(255,255,255,0.08); color: #dbe2ec; border: 0;
+  padding: 6px 10px; border-radius: 6px; font-size: 12px; cursor: pointer;
+}
+
+.main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 28px; background: var(--surface-1); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 5;
+}
+.topbar h1 { font-size: 19px; margin: 0; font-weight: 700; }
+.topbar .meta { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+.topbar .right { display: flex; align-items: center; gap: 10px; }
+.badge {
+  font-size: 11px; padding: 4px 9px; border-radius: 999px; font-weight: 600;
+  background: #eaf1fe; color: #1a5fc4; border: 1px solid #d3e2fd;
+}
+.badge.admin { background: #fef3e6; color: #b5651a; border-color: #fbe0bf; }
+
+.content { padding: 24px 28px 48px; }
+
+/* ── KPI strip ─────────────────────────────────────────────────────────────*/
+.kpi-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 22px; }
+.kpi {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 18px; box-shadow: var(--shadow); position: relative; overflow: hidden;
+}
+.kpi::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent, var(--brand)); }
+.kpi .label { font-size: 12px; color: var(--text-secondary); font-weight: 500; }
+.kpi .value { font-size: 26px; font-weight: 700; margin-top: 6px; letter-spacing: -0.5px; }
+.kpi .foot { font-size: 11.5px; color: var(--text-muted); margin-top: 4px; }
+
+/* ── Cards / grid ──────────────────────────────────────────────────────────*/
+.grid { display: grid; gap: 16px; }
+.grid.c2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.span2 { grid-column: span 2; }
+@media (max-width: 1100px) { .grid.c2, .grid.c3 { grid-template-columns: 1fr; } .span2 { grid-column: auto; } }
+
+.card {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 18px 8px; box-shadow: var(--shadow);
+}
+.card h3 { margin: 0 0 2px; font-size: 14px; font-weight: 650; }
+.card .sub { font-size: 11.5px; color: var(--text-muted); margin-bottom: 10px; }
+.card.pad { padding-bottom: 18px; }
+
+/* funnel */
+.funnel { display: flex; flex-direction: column; gap: 8px; padding: 4px 0 12px; }
+.funnel .row { display: flex; align-items: center; gap: 12px; }
+.funnel .row .name { width: 150px; font-size: 12.5px; color: var(--text-secondary); flex-shrink: 0; }
+.funnel .row .bar-wrap { flex: 1; background: var(--surface-2); border-radius: 6px; overflow: hidden; height: 30px; }
+.funnel .row .bar { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 10px; color: #fff; font-size: 12px; font-weight: 600; min-width: 42px; }
+.funnel .row .pct { width: 120px; font-size: 12px; color: var(--text-muted); text-align: right; flex-shrink: 0; }
+.funnel .row .pct b { color: var(--text-primary); font-weight: 650; }
+
+/* simple bar list (for tiny datasets) */
+.barlist { display: flex; flex-direction: column; gap: 9px; padding: 4px 0 10px; }
+.barlist .item { display: flex; align-items: center; gap: 10px; }
+.barlist .item .nm { width: 46%; font-size: 12.5px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.barlist .item .track { flex: 1; height: 10px; background: var(--surface-2); border-radius: 5px; overflow: hidden; }
+.barlist .item .fill { height: 100%; border-radius: 5px; }
+.barlist .item .vl { width: 56px; text-align: right; font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.empty { color: var(--text-muted); font-size: 12.5px; padding: 24px 0; text-align: center; }
+
+/* recharts tooltip */
+.rc-tip { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; box-shadow: var(--shadow); font-size: 12px; }
+.rc-tip .t { font-weight: 650; margin-bottom: 3px; }
+.rc-tip .v { color: var(--text-secondary); }
+
+/* ── Login ─────────────────────────────────────────────────────────────────*/
+.login { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: radial-gradient(1200px 600px at 20% -10%, var(--fk-blue) 0%, var(--fk-navy) 60%); }
+.login .box { background: var(--surface-1); border-radius: 16px; padding: 34px 32px; width: 380px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.login .logo { display: flex; align-items: center; gap: 9px; font-weight: 800; font-size: 18px; }
+.login .logo .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--brand); }
+.login .sub { color: var(--text-muted); font-size: 12.5px; margin: 6px 0 22px; }
+.login label { font-size: 12px; color: var(--text-secondary); font-weight: 600; display: block; margin: 12px 0 5px; }
+.login input { width: 100%; padding: 10px 12px; border: 1px solid #d8dae0; border-radius: 8px; font-size: 14px; }
+.login input:focus { outline: 2px solid #bcd3fb; border-color: var(--brand); }
+.login button { width: 100%; margin-top: 20px; padding: 11px; background: var(--brand); color: #fff; border: 0; border-radius: 8px; font-size: 14px; font-weight: 650; cursor: pointer; }
+.login button:hover { background: #1e63d8; }
+.login .err { color: var(--critical); font-size: 12.5px; margin-top: 12px; min-height: 16px; }
+.login .hint { margin-top: 18px; font-size: 11.5px; color: var(--text-muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 12px; }
+
+/* ── Admin panel ───────────────────────────────────────────────────────────*/
+.admin-bar { background: #fff7ec; border: 1px solid #f6d9a8; border-radius: var(--radius); padding: 14px 18px; margin-bottom: 20px; }
+.admin-bar h3 { margin: 0 0 4px; font-size: 13.5px; }
+.admin-bar .desc { font-size: 12px; color: var(--text-secondary); margin-bottom: 10px; }
+.admin-bar .row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.toggles { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.toggle { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-secondary); }
+.toggle input { width: 15px; height: 15px; }
+.admin-bar input[type=text] { padding: 7px 9px; border: 1px solid #d8dae0; border-radius: 6px; font-size: 12.5px; min-width: 240px; }
+.admin-bar button { padding: 7px 13px; border-radius: 6px; border: 0; background: var(--brand); color: #fff; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+.admin-bar button.ghost { background: #fff; color: var(--brand); border: 1px solid #cddffb; }
+.admin-bar .status { font-size: 12px; margin-top: 8px; }
+.btn-file { display: inline-block; padding: 7px 13px; border-radius: 6px; background: var(--brand); color: #fff; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+.ghost-upload:hover .btn-file { background: #1e63d8; }
+.divider { height: 1px; background: var(--border); margin: 12px 0; }
+.section-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin: 22px 0 12px; }
