@@ -86,6 +86,10 @@ export default function App() {
           <div>Signed in as</div>
           <div className="who">{isAdmin ? "Administrator" : "Client"}</div>
           <button onClick={() => { logout(); setRole(null); setData(null); }}>Sign out</button>
+          <div className="powered">
+            <span>Powered by</span>
+            <img src={`${import.meta.env.BASE_URL}netscribes-white.png`} alt="Netscribes" />
+          </div>
         </div>
       </aside>
 
