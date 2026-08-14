@@ -108,6 +108,39 @@ export function Trend({ data, xKey, yKey, color = SERIES[0], valueLabel, height 
   );
 }
 
+// Horizontal stacked bars — one row per category, segments = a second dimension.
+// Segments must partition the row (they sum to `total`), so widths are honest.
+export function StackedBars({ data, series, colorFor, height }: {
+  data: { name: string; total: number; [seg: string]: number | string }[];
+  series: string[]; colorFor: (seg: string, i: number) => string; height?: number;
+}) {
+  if (!data || data.length === 0) return <div className="empty">No data yet</div>;
+  const gridMax = Math.max(...data.map((d) => d.total), 1);
+  return (
+    <div className="stackbars" style={height ? { minHeight: height } : undefined}>
+      {data.map((row) => (
+        <div className="sb-row" key={row.name}>
+          <div className="sb-name" title={row.name}>{row.name}</div>
+          <div className="sb-track">
+            <div className="sb-bar" style={{ width: `${(row.total / gridMax) * 100}%` }}>
+              {series.map((s, i) => {
+                const v = Number(row[s]) || 0;
+                if (v === 0) return null;
+                const w = (v / (row.total || 1)) * 100;
+                return (
+                  <div key={s} className="sb-seg" title={`${s}: ${fmt(v)}`}
+                    style={{ width: `${w}%`, background: colorFor(s, i) }} />
+                );
+              })}
+            </div>
+          </div>
+          <div className="sb-total">{fmt(row.total)}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // Horizontal % bars for SOP pass rates (status-colored by threshold)
 export function PctBars({ data }: { data: NameValue[] }) {
   if (!data || data.length === 0) return <div className="empty">No data yet</div>;
