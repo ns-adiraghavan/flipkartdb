@@ -40,5 +40,694 @@
       "name": "Client Inbound",
       "value": 201
     }
-  ]
+  ],
+  "source_report": {
+    "meta": {
+      "call_rows": 12023,
+      "unique_brands": 3891,
+      "date_start": "2026-07-01",
+      "date_end": "2026-08-11",
+      "active_days": 36
+    },
+    "flat": {
+      "agent": [
+        {
+          "name": "Abhijeet Roy",
+          "value": 1013
+        },
+        {
+          "name": "Roshan Kumar Gupta",
+          "value": 943
+        },
+        {
+          "name": "Joydeep Basak",
+          "value": 707
+        },
+        {
+          "name": "Sourav Kumar De",
+          "value": 700
+        },
+        {
+          "name": "Subhajit Das",
+          "value": 423
+        },
+        {
+          "name": "Subrajeet",
+          "value": 105
+        }
+      ],
+      "lead_type_bin": [
+        {
+          "name": "Client 2k leads",
+          "value": 1905
+        },
+        {
+          "name": "NS Internal",
+          "value": 1362
+        },
+        {
+          "name": "NS Insta Lead",
+          "value": 243
+        },
+        {
+          "name": "Domain Check_Yes",
+          "value": 172
+        },
+        {
+          "name": "Client inbounds leads",
+          "value": 125
+        },
+        {
+          "name": "Domain check _3",
+          "value": 84
+        }
+      ],
+      "disposition": [
+        {
+          "name": "Payment Completed - Nextgen LITE",
+          "value": 17
+        },
+        {
+          "name": "Interested Onboarding in Nextgen LITE",
+          "value": 2
+        },
+        {
+          "name": "Interested but Callback Later",
+          "value": 15
+        },
+        {
+          "name": "Call Back Requested",
+          "value": 446
+        },
+        {
+          "name": "Call Picked & Disconnected",
+          "value": 237
+        },
+        {
+          "name": "Not Reachable / Switched Off / Out of Network",
+          "value": 405
+        },
+        {
+          "name": "RNR (Ring No Response)",
+          "value": 1806
+        },
+        {
+          "name": "Not Interested",
+          "value": 963
+        }
+      ],
+      "day": [
+        {
+          "name": "2026-07-01",
+          "value": 156
+        },
+        {
+          "name": "2026-07-02",
+          "value": 106
+        },
+        {
+          "name": "2026-07-03",
+          "value": 205
+        },
+        {
+          "name": "2026-07-04",
+          "value": 257
+        },
+        {
+          "name": "2026-07-06",
+          "value": 189
+        },
+        {
+          "name": "2026-07-07",
+          "value": 243
+        },
+        {
+          "name": "2026-07-08",
+          "value": 244
+        },
+        {
+          "name": "2026-07-09",
+          "value": 206
+        },
+        {
+          "name": "2026-07-10",
+          "value": 199
+        },
+        {
+          "name": "2026-07-11",
+          "value": 286
+        },
+        {
+          "name": "2026-07-13",
+          "value": 404
+        },
+        {
+          "name": "2026-07-14",
+          "value": 416
+        },
+        {
+          "name": "2026-07-15",
+          "value": 357
+        },
+        {
+          "name": "2026-07-16",
+          "value": 401
+        },
+        {
+          "name": "2026-07-17",
+          "value": 396
+        },
+        {
+          "name": "2026-07-18",
+          "value": 412
+        },
+        {
+          "name": "2026-07-20",
+          "value": 402
+        },
+        {
+          "name": "2026-07-21",
+          "value": 254
+        },
+        {
+          "name": "2026-07-22",
+          "value": 389
+        },
+        {
+          "name": "2026-07-23",
+          "value": 406
+        },
+        {
+          "name": "2026-07-24",
+          "value": 295
+        },
+        {
+          "name": "2026-07-25",
+          "value": 412
+        },
+        {
+          "name": "2026-07-27",
+          "value": 465
+        },
+        {
+          "name": "2026-07-28",
+          "value": 238
+        },
+        {
+          "name": "2026-07-29",
+          "value": 303
+        },
+        {
+          "name": "2026-07-30",
+          "value": 229
+        },
+        {
+          "name": "2026-07-31",
+          "value": 236
+        },
+        {
+          "name": "2026-08-01",
+          "value": 374
+        },
+        {
+          "name": "2026-08-03",
+          "value": 357
+        },
+        {
+          "name": "2026-08-04",
+          "value": 438
+        },
+        {
+          "name": "2026-08-05",
+          "value": 304
+        },
+        {
+          "name": "2026-08-06",
+          "value": 385
+        },
+        {
+          "name": "2026-08-07",
+          "value": 329
+        },
+        {
+          "name": "2026-08-08",
+          "value": 448
+        },
+        {
+          "name": "2026-08-10",
+          "value": 345
+        },
+        {
+          "name": "2026-08-11",
+          "value": 396
+        }
+      ]
+    },
+    "stacks": {
+      "agent|disposition": {
+        "series": [
+          "Payment Completed - Nextgen LITE",
+          "Interested Onboarding in Nextgen LITE",
+          "Interested but Callback Later",
+          "Call Back Requested",
+          "Call Picked & Disconnected",
+          "Not Reachable / Switched Off / Out of Network",
+          "RNR (Ring No Response)",
+          "Not Interested"
+        ],
+        "data": [
+          {
+            "name": "Abhijeet Roy",
+            "total": 1013,
+            "Payment Completed - Nextgen LITE": 5,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 3,
+            "Call Back Requested": 110,
+            "Call Picked & Disconnected": 37,
+            "Not Reachable / Switched Off / Out of Network": 79,
+            "RNR (Ring No Response)": 459,
+            "Not Interested": 320
+          },
+          {
+            "name": "Roshan Kumar Gupta",
+            "total": 943,
+            "Payment Completed - Nextgen LITE": 6,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 3,
+            "Call Back Requested": 125,
+            "Call Picked & Disconnected": 46,
+            "Not Reachable / Switched Off / Out of Network": 71,
+            "RNR (Ring No Response)": 443,
+            "Not Interested": 249
+          },
+          {
+            "name": "Joydeep Basak",
+            "total": 707,
+            "Payment Completed - Nextgen LITE": 4,
+            "Interested Onboarding in Nextgen LITE": 1,
+            "Interested but Callback Later": 2,
+            "Call Back Requested": 70,
+            "Call Picked & Disconnected": 72,
+            "Not Reachable / Switched Off / Out of Network": 115,
+            "RNR (Ring No Response)": 309,
+            "Not Interested": 134
+          },
+          {
+            "name": "Sourav Kumar De",
+            "total": 700,
+            "Payment Completed - Nextgen LITE": 1,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 6,
+            "Call Back Requested": 60,
+            "Call Picked & Disconnected": 38,
+            "Not Reachable / Switched Off / Out of Network": 77,
+            "RNR (Ring No Response)": 348,
+            "Not Interested": 170
+          },
+          {
+            "name": "Subhajit Das",
+            "total": 423,
+            "Payment Completed - Nextgen LITE": 1,
+            "Interested Onboarding in Nextgen LITE": 1,
+            "Interested but Callback Later": 0,
+            "Call Back Requested": 65,
+            "Call Picked & Disconnected": 28,
+            "Not Reachable / Switched Off / Out of Network": 52,
+            "RNR (Ring No Response)": 195,
+            "Not Interested": 81
+          },
+          {
+            "name": "Subrajeet",
+            "total": 105,
+            "Payment Completed - Nextgen LITE": 0,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 1,
+            "Call Back Requested": 16,
+            "Call Picked & Disconnected": 16,
+            "Not Reachable / Switched Off / Out of Network": 11,
+            "RNR (Ring No Response)": 52,
+            "Not Interested": 9
+          }
+        ]
+      },
+      "agent|lead_type_bin": {
+        "series": [
+          "Client 2k leads",
+          "NS Internal",
+          "NS Insta Lead",
+          "Domain Check_Yes",
+          "Client inbounds leads",
+          "Domain check _3"
+        ],
+        "data": [
+          {
+            "name": "Abhijeet Roy",
+            "total": 1013,
+            "Client 2k leads": 516,
+            "NS Internal": 311,
+            "NS Insta Lead": 74,
+            "Domain Check_Yes": 43,
+            "Client inbounds leads": 44,
+            "Domain check _3": 25
+          },
+          {
+            "name": "Roshan Kumar Gupta",
+            "total": 943,
+            "Client 2k leads": 521,
+            "NS Internal": 295,
+            "NS Insta Lead": 38,
+            "Domain Check_Yes": 42,
+            "Client inbounds leads": 32,
+            "Domain check _3": 15
+          },
+          {
+            "name": "Joydeep Basak",
+            "total": 707,
+            "Client 2k leads": 355,
+            "NS Internal": 286,
+            "NS Insta Lead": 35,
+            "Domain Check_Yes": 12,
+            "Client inbounds leads": 9,
+            "Domain check _3": 10
+          },
+          {
+            "name": "Sourav Kumar De",
+            "total": 700,
+            "Client 2k leads": 278,
+            "NS Internal": 258,
+            "NS Insta Lead": 79,
+            "Domain Check_Yes": 43,
+            "Client inbounds leads": 21,
+            "Domain check _3": 21
+          },
+          {
+            "name": "Subhajit Das",
+            "total": 423,
+            "Client 2k leads": 206,
+            "NS Internal": 196,
+            "NS Insta Lead": 0,
+            "Domain Check_Yes": 1,
+            "Client inbounds leads": 15,
+            "Domain check _3": 5
+          },
+          {
+            "name": "Subrajeet",
+            "total": 105,
+            "Client 2k leads": 29,
+            "NS Internal": 16,
+            "NS Insta Lead": 17,
+            "Domain Check_Yes": 31,
+            "Client inbounds leads": 4,
+            "Domain check _3": 8
+          }
+        ]
+      },
+      "lead_type_bin|disposition": {
+        "series": [
+          "Payment Completed - Nextgen LITE",
+          "Interested Onboarding in Nextgen LITE",
+          "Interested but Callback Later",
+          "Call Back Requested",
+          "Call Picked & Disconnected",
+          "Not Reachable / Switched Off / Out of Network",
+          "RNR (Ring No Response)",
+          "Not Interested"
+        ],
+        "data": [
+          {
+            "name": "Client 2k leads",
+            "total": 1905,
+            "Payment Completed - Nextgen LITE": 8,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 3,
+            "Call Back Requested": 121,
+            "Call Picked & Disconnected": 123,
+            "Not Reachable / Switched Off / Out of Network": 181,
+            "RNR (Ring No Response)": 957,
+            "Not Interested": 512
+          },
+          {
+            "name": "NS Internal",
+            "total": 1362,
+            "Payment Completed - Nextgen LITE": 7,
+            "Interested Onboarding in Nextgen LITE": 2,
+            "Interested but Callback Later": 2,
+            "Call Back Requested": 239,
+            "Call Picked & Disconnected": 77,
+            "Not Reachable / Switched Off / Out of Network": 159,
+            "RNR (Ring No Response)": 588,
+            "Not Interested": 288
+          },
+          {
+            "name": "NS Insta Lead",
+            "total": 243,
+            "Payment Completed - Nextgen LITE": 1,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 7,
+            "Call Back Requested": 37,
+            "Call Picked & Disconnected": 20,
+            "Not Reachable / Switched Off / Out of Network": 31,
+            "RNR (Ring No Response)": 115,
+            "Not Interested": 32
+          },
+          {
+            "name": "Domain Check_Yes",
+            "total": 172,
+            "Payment Completed - Nextgen LITE": 0,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 3,
+            "Call Back Requested": 27,
+            "Call Picked & Disconnected": 10,
+            "Not Reachable / Switched Off / Out of Network": 20,
+            "RNR (Ring No Response)": 55,
+            "Not Interested": 57
+          },
+          {
+            "name": "Client inbounds leads",
+            "total": 125,
+            "Payment Completed - Nextgen LITE": 1,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 0,
+            "Call Back Requested": 18,
+            "Call Picked & Disconnected": 6,
+            "Not Reachable / Switched Off / Out of Network": 7,
+            "RNR (Ring No Response)": 48,
+            "Not Interested": 45
+          },
+          {
+            "name": "Domain check _3",
+            "total": 84,
+            "Payment Completed - Nextgen LITE": 0,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 0,
+            "Call Back Requested": 4,
+            "Call Picked & Disconnected": 1,
+            "Not Reachable / Switched Off / Out of Network": 7,
+            "RNR (Ring No Response)": 43,
+            "Not Interested": 29
+          }
+        ]
+      },
+      "disposition|lead_type_bin": {
+        "series": [
+          "Client 2k leads",
+          "NS Internal",
+          "NS Insta Lead",
+          "Domain Check_Yes",
+          "Client inbounds leads",
+          "Domain check _3"
+        ],
+        "data": [
+          {
+            "name": "Payment Completed - Nextgen LITE",
+            "total": 17,
+            "Client 2k leads": 8,
+            "NS Internal": 7,
+            "NS Insta Lead": 1,
+            "Domain Check_Yes": 0,
+            "Client inbounds leads": 1,
+            "Domain check _3": 0
+          },
+          {
+            "name": "Interested Onboarding in Nextgen LITE",
+            "total": 2,
+            "Client 2k leads": 0,
+            "NS Internal": 2,
+            "NS Insta Lead": 0,
+            "Domain Check_Yes": 0,
+            "Client inbounds leads": 0,
+            "Domain check _3": 0
+          },
+          {
+            "name": "Interested but Callback Later",
+            "total": 15,
+            "Client 2k leads": 3,
+            "NS Internal": 2,
+            "NS Insta Lead": 7,
+            "Domain Check_Yes": 3,
+            "Client inbounds leads": 0,
+            "Domain check _3": 0
+          },
+          {
+            "name": "Call Back Requested",
+            "total": 446,
+            "Client 2k leads": 121,
+            "NS Internal": 239,
+            "NS Insta Lead": 37,
+            "Domain Check_Yes": 27,
+            "Client inbounds leads": 18,
+            "Domain check _3": 4
+          },
+          {
+            "name": "Call Picked & Disconnected",
+            "total": 237,
+            "Client 2k leads": 123,
+            "NS Internal": 77,
+            "NS Insta Lead": 20,
+            "Domain Check_Yes": 10,
+            "Client inbounds leads": 6,
+            "Domain check _3": 1
+          },
+          {
+            "name": "Not Reachable / Switched Off / Out of Network",
+            "total": 405,
+            "Client 2k leads": 181,
+            "NS Internal": 159,
+            "NS Insta Lead": 31,
+            "Domain Check_Yes": 20,
+            "Client inbounds leads": 7,
+            "Domain check _3": 7
+          },
+          {
+            "name": "RNR (Ring No Response)",
+            "total": 1806,
+            "Client 2k leads": 957,
+            "NS Internal": 588,
+            "NS Insta Lead": 115,
+            "Domain Check_Yes": 55,
+            "Client inbounds leads": 48,
+            "Domain check _3": 43
+          },
+          {
+            "name": "Not Interested",
+            "total": 963,
+            "Client 2k leads": 512,
+            "NS Internal": 288,
+            "NS Insta Lead": 32,
+            "Domain Check_Yes": 57,
+            "Client inbounds leads": 45,
+            "Domain check _3": 29
+          }
+        ]
+      }
+    },
+    "matrix": {
+      "dispositions": [
+        "Payment Completed - Nextgen LITE",
+        "Interested Onboarding in Nextgen LITE",
+        "Interested but Callback Later",
+        "Call Back Requested",
+        "Call Picked & Disconnected",
+        "Not Reachable / Switched Off / Out of Network",
+        "RNR (Ring No Response)",
+        "Not Interested"
+      ],
+      "rows": [
+        {
+          "name": "Client 2k leads",
+          "cells": {
+            "Payment Completed - Nextgen LITE": 8,
+            "Interested Onboarding in Nextgen LITE": 1,
+            "Interested but Callback Later": 112,
+            "Call Back Requested": 682,
+            "Call Picked & Disconnected": 422,
+            "Not Reachable / Switched Off / Out of Network": 298,
+            "RNR (Ring No Response)": 1336,
+            "Not Interested": 585
+          },
+          "total": 1905
+        },
+        {
+          "name": "NS Internal",
+          "cells": {
+            "Payment Completed - Nextgen LITE": 7,
+            "Interested Onboarding in Nextgen LITE": 9,
+            "Interested but Callback Later": 72,
+            "Call Back Requested": 531,
+            "Call Picked & Disconnected": 223,
+            "Not Reachable / Switched Off / Out of Network": 232,
+            "RNR (Ring No Response)": 793,
+            "Not Interested": 304
+          },
+          "total": 1366
+        },
+        {
+          "name": "NS Insta Lead",
+          "cells": {
+            "Payment Completed - Nextgen LITE": 1,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 10,
+            "Call Back Requested": 61,
+            "Call Picked & Disconnected": 30,
+            "Not Reachable / Switched Off / Out of Network": 38,
+            "RNR (Ring No Response)": 135,
+            "Not Interested": 35
+          },
+          "total": 244
+        },
+        {
+          "name": "Domain Check_Yes",
+          "cells": {
+            "Payment Completed - Nextgen LITE": 0,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 10,
+            "Call Back Requested": 60,
+            "Call Picked & Disconnected": 28,
+            "Not Reachable / Switched Off / Out of Network": 22,
+            "RNR (Ring No Response)": 113,
+            "Not Interested": 59
+          },
+          "total": 172
+        },
+        {
+          "name": "Client inbounds leads",
+          "cells": {
+            "Payment Completed - Nextgen LITE": 1,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 13,
+            "Call Back Requested": 80,
+            "Call Picked & Disconnected": 29,
+            "Not Reachable / Switched Off / Out of Network": 16,
+            "RNR (Ring No Response)": 88,
+            "Not Interested": 58
+          },
+          "total": 125
+        },
+        {
+          "name": "Domain check _3",
+          "cells": {
+            "Payment Completed - Nextgen LITE": 0,
+            "Interested Onboarding in Nextgen LITE": 0,
+            "Interested but Callback Later": 5,
+            "Call Back Requested": 24,
+            "Call Picked & Disconnected": 17,
+            "Not Reachable / Switched Off / Out of Network": 16,
+            "RNR (Ring No Response)": 61,
+            "Not Interested": 36
+          },
+          "total": 84
+        }
+      ],
+      "disp_totals": {
+        "Payment Completed - Nextgen LITE": 17,
+        "Interested Onboarding in Nextgen LITE": 10,
+        "Interested but Callback Later": 222,
+        "Call Back Requested": 1438,
+        "Call Picked & Disconnected": 749,
+        "Not Reachable / Switched Off / Out of Network": 622,
+        "RNR (Ring No Response)": 2522,
+        "Not Interested": 1076
+      }
+    }
+  }
 }
