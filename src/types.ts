@@ -7,10 +7,31 @@ export interface OverviewData {
   revenue_by_re: NameValue[];
   leads_by_group: NameValue[];
 }
+export interface StackBlock {
+  series: string[];
+  data: { name: string; total: number; [seg: string]: number | string }[];
+}
+export interface SourceReport {
+  meta: {
+    call_rows: number; unique_brands: number;
+    date_start: string; date_end: string; active_days: number;
+  };
+  flat: {
+    agent: NameValue[]; lead_type_bin: NameValue[];
+    disposition: NameValue[]; day: NameValue[];
+  };
+  stacks: Record<string, StackBlock>;
+  matrix: {
+    dispositions: string[];
+    rows: { name: string; cells: Record<string, number>; total: number }[];
+    disp_totals: Record<string, number>;
+  };
+}
 export interface LeadsData {
   kpis: Record<string, number>;
   by_type: NameValue[];
   by_group: NameValue[];
+  source_report?: SourceReport;
 }
 export interface BdData {
   kpis: Record<string, number>;

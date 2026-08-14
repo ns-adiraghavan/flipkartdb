@@ -153,6 +153,53 @@ body { background: var(--page); color: var(--text-primary); }
 
 .empty { color: var(--text-muted); font-size: 12.5px; padding: 24px 0; text-align: center; }
 
+/* ── Lead Source Report (Leads tab) ───────────────────────────────────────── */
+.lsr-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin: 2px 0 14px; }
+.lsr-ctl .grp { display: flex; align-items: center; gap: 8px; }
+.lsr-ctl .grp > span { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--text-muted); }
+.seg { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 2px; }
+.seg button {
+  border: 0; background: transparent; color: var(--text-secondary); cursor: pointer;
+  font-size: 12.5px; font-weight: 600; padding: 6px 11px; border-radius: 6px; transition: all .12s;
+}
+.seg button:hover { color: var(--text-primary); }
+.seg button.on { background: var(--brand); color: #fff; box-shadow: 0 1px 2px rgba(11,11,11,.12); }
+.seg button:disabled { opacity: .4; cursor: default; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 10px 2px 4px; }
+.legend .li { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; color: var(--text-secondary); }
+.legend .sw { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+
+.stackbars { display: flex; flex-direction: column; gap: 10px; padding: 6px 0 8px; }
+.sb-row { display: flex; align-items: center; gap: 10px; }
+.sb-row .sb-name { width: 168px; flex-shrink: 0; font-size: 12.5px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sb-row .sb-track { flex: 1; background: var(--surface-2); border-radius: 6px; overflow: hidden; height: 22px; }
+.sb-row .sb-bar { display: flex; height: 100%; border-radius: 6px; overflow: hidden; }
+.sb-row .sb-seg { height: 100%; }
+.sb-row .sb-seg:first-child { border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+.sb-row .sb-seg:last-child { border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+.sb-row .sb-total { width: 56px; text-align: right; font-size: 12.5px; font-weight: 650; font-variant-numeric: tabular-nums; }
+
+.note { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }
+
+.section-rule {
+  display: flex; align-items: center; gap: 12px;
+  margin: 26px 0 14px; font-size: 12px; font-weight: 650; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--text-muted);
+}
+.section-rule::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+.matrix-wrap { overflow-x: auto; padding: 2px 0 6px; }
+table.matrix { width: 100%; border-collapse: collapse; font-size: 12px; }
+table.matrix th, table.matrix td { padding: 7px 9px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+table.matrix th.k, table.matrix td.k { text-align: left; font-weight: 600; color: var(--text-secondary); position: sticky; left: 0; background: var(--surface-1); }
+table.matrix thead th { color: var(--text-muted); font-weight: 600; font-size: 10.5px; text-transform: uppercase; letter-spacing: .03em; vertical-align: bottom; border-bottom: 1px solid var(--baseline); }
+table.matrix td.z { color: var(--text-muted); }
+table.matrix td.tot, table.matrix th.tot { font-weight: 700; color: var(--text-primary); border-left: 1px solid var(--border); }
+table.matrix tbody tr:hover td { background: var(--fk-blue-050); }
+table.matrix tbody tr:hover td.k { background: var(--fk-blue-050); }
+table.matrix .heat { border-radius: 4px; padding: 3px 7px; display: inline-block; min-width: 30px; }
+
 /* recharts tooltip */
 .rc-tip { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; box-shadow: var(--shadow); font-size: 12px; }
 .rc-tip .t { font-weight: 650; margin-bottom: 3px; }
